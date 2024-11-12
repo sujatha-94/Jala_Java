@@ -1,0 +1,21 @@
+package arrays;
+
+public class ArrayOperations16 {
+    public static boolean containsTwoElements(int[] arr, int num1, int num2) {
+        boolean containsNum1 = false;
+        boolean containsNum2 = false;
+
+        for (int num : arr) {
+            if (num == num1) containsNum1 = true;
+            if (num == num2) containsNum2 = true;
+        }
+
+        return containsNum1 && containsNum2;
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {1, 12, 23, 4, 5};
+        System.out.println("Contains 12 and 23? " + containsTwoElements(arr, 12, 23));
+    }
+}
+
